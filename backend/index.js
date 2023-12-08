@@ -65,7 +65,8 @@ app.post('/register',async(req,res) => {
     const token = jwt.sign(json,secret);
     return res.json({
         message: "Registration successful",
-        token: token
+        token: token,
+        username: username
     });
 });
 
@@ -88,7 +89,8 @@ app.post('/login',async(req,res)=> {
     const token = jwt.sign(json,secret);
     return res.json({
         message: "Login successful",
-        token: token
+        token: token,
+        username: username
     });
 })
 
