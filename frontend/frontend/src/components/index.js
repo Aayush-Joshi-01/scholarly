@@ -1,5 +1,11 @@
-import S from './S.png'
+import Hero from './Hero';
+import Navbar from './Navbar';
+import About from './About';
+import Feedbacks from './Feedbacks';
 
 export {
-    S
+  Hero,
+  Navbar,
+  About,
+  Feedbacks
 }

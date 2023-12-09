@@ -1,34 +1,29 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Login from './components/Login'
-import Register from './components/Register'
-import Home from './components/Home'
-import AddScholarship from './components/AddScholarship'
-import DeleteScholarship from './components/DeleteScholarship'
-import UpdateScholarship from './components/UpdateScholarship'
-import MasterHome from './components/MasterHome'
-import InternationalView from './components/InternationView'
-import MeritView from './components/MeritView'
-import MeansView from './components/MeansView'
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import Login from "./components/Login";
+import ViewAll from "./components/ViewAll";
+import Register from "./components/Register";
 
+import { Navbar } from "./components";
+import { useState } from "react";
+import Loader from "./components/Loader";
 
 const App = () => {
+  const [masterUsername,setMasterUsername] = useState('');
+  const [loading,setLoading] = useState(false);
   return (
-    <div>
+    <BrowserRouter>
+      <Navbar username={masterUsername} setUsername={setMasterUsername}/>
+      {loading && <Loader />}
       <Routes>
-      <Route path='/' element={<MasterHome />} />
-      <Route path='/means' element={<MeansView />} />
-      <Route path='/merit' element={<MeritView />} />
-      <Route path='/international' element={<InternationalView />} />
-        <Route path='/viewAll' element={<Home />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/admin/addScholarship' element={<AddScholarship />} />
-        <Route path='/admin/deleteScholarship' element={<DeleteScholarship />} />
-        <Route path='/admin/updateScholarship' element={<UpdateScholarship />} />
+        <Route path="/" element={<Home />} />
+        <Route path='/viewAll' element={<ViewAll loading={setLoading} username={masterUsername} />} />
+        <Route path='/login' element={<Login loading={setLoading} setUsername={setMasterUsername} />} />
+        <Route path="/register" element={<Register loading={setLoading} setUsername={setMasterUsername} />} />
       </Routes>
-    </div>
-  )
-}
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
