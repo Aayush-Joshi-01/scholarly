@@ -11,7 +11,7 @@ Scholarly is a scholarship discovery platform for students to explore and filter
 
 ## Demo
 
-Explore the live demo: [Live Demo Link](link-to-live-demo)
+Explore the live demo: [Live Demo Link](https://scholarly-eta.vercel.app/)
 
 ## Installation
 
