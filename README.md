@@ -2,8 +2,6 @@
 
 Scholarly is a scholarship discovery platform for students to explore and filter various scholarship opportunities globally. The platform allows users to refine searches based on parameters such as merit, nationality, and scholar level.
 
-![Scholarly Logo](link-to-your-logo.png)
-
 ## Features
 
 - **Extensive Scholarship Database**: Access a diverse range of scholarships across different educational levels and categories.
@@ -14,11 +12,6 @@ Scholarly is a scholarship discovery platform for students to explore and filter
 ## Demo
 
 Explore the live demo: [Live Demo Link](link-to-live-demo)
-
-## Screenshots
-
-![Screenshot 1](link-to-screenshot-1.png)
-![Screenshot 2](link-to-screenshot-2.png)
 
 ## Installation
 
