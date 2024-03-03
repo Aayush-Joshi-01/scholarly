@@ -52,9 +52,17 @@ Meet the creators behind Scholarly:
   - *Role:* Backend Developer
   - *GitHub:* [@AaradhyaKorde](https://github.com/AaradhyaKorde)
 
+- **Jatin Sahijwani**
+  - *Role:* Backend Developer
+  - *GitHub:* [@jatinsahijwani](https://github.com/jatinsahijwani)
+
 - **Anirudh Singh Chouhan**
   - *Role:* UI/UX Designer
   - *GitHub:* [@AnirudhSingh07](https://github.com/AnirudhSingh07)
+
+- **Aayush Joshi**
+  - *Role:* Project Management and Documentation
+  - *GitHub:* [@Aayush-Joshi-01](https://github.com/Aayush-Joshi-01)
 
 ## Contributing
 
